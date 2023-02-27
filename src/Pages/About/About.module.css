@@ -1,0 +1,50 @@
+.about_page_container>figure{
+    height: 500px;
+    width: 100%;
+}
+.about_page_container>figure>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.about_page_content {
+    padding-inline: 23px;
+    color: #161616;
+    margin-bottom: 55px;
+}
+
+.about_page_content h1 {
+    line-height: 38px;
+    font-size: 2.8rem;
+}
+
+.about_page_content p {
+    line-height: 22px;
+    font-size: 1.7rem;
+}
+
+.about_page_cta {
+    background-color: #FFCC8D;
+    color: #161616b4;
+    padding-inline: 32px;
+    padding-bottom: 32px;
+    margin-inline: 27px;
+    border-radius: 5px;
+}
+
+.about_page_cta h2 {
+    margin: 0;
+    padding-block: 37px;
+    font-size: 2.2rem;
+}
+
+.about_page_cta .link_button {
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 0.7em 2em;
+}
