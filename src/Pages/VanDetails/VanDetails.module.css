@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 .van_type{
     background: #161616;
@@ -57,4 +58,13 @@ p{
     cursor: pointer;
     color: #fff;
     font-size: 2rem;
+}
+
+@media  screen and (max-width:768px) {
+    .van_detail_container{
+        width: 90%;
+    }
+    img{
+        height: 400px;
+    }
 }

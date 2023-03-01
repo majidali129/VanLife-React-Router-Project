@@ -2,22 +2,35 @@ import { useEffect, useState } from 'react'
 
 import classes from './Vans.module.css'
 import "../../Server.js"
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 const Vans = () => {
     const [vanData , setVanData] = useState([]);
-  useEffect(()=>{
+    const [isLoading , setIsLoadig] = useState(false)
 
-    fetch("/api/vans")
-    .then((response)=>response.json())
-    .then((data)=>setVanData(data.vans));
+
+     
+    const fetchData = async ()=>{
+        setIsLoadig(true)
+        const response = await fetch("/api/vans");
+        // const data = await response.then((response)=>response.json())
+        const data = await response.json()
+        setVanData(data.vans)
+        setIsLoadig(false)
+    }
+
+  useEffect(()=>{
+        fetchData()
   },[])
 
   return (
     <>
     <section className={classes.vans_container}>
+        {
+            isLoading &&  <h1 className={classes.loading}>Loading...</h1>
+        }
         {
             vanData.map((van)=>{
                const  {name , id , price , imageUrl, type} = van ;
@@ -39,7 +52,7 @@ const Vans = () => {
                 )
             })
         }
-   
+
     </section>
     </>
   )

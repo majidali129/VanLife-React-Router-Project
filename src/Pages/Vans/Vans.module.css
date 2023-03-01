@@ -62,3 +62,12 @@ figure>img{
     border-radius: 4px;
     color: #ffffffd0;
 }
+.loading{
+    text-align: center;
+    font-size: 2rem;
+    /* color: #fff; */
+}
+
+.error{
+    color: #ff0000c7;
+}

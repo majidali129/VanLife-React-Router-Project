@@ -16,7 +16,7 @@ export default function VanDetail() {
     return (
         <div className={classes.van_detail_container}>
           <a href="/" className={classes.back_to_btn}>
-           <span><i class="bi bi-arrow-left"></i></span> <span className={classes.btn_text}>Back to all vans</span></a>
+           <span><i className="bi bi-arrow-left"></i></span> <span className={classes.btn_text}>Back to all vans</span></a>
             {van ? (
                 <div className={classes.van_detail}>
                     <img src={van.imageUrl} height="600px" alt="" />
