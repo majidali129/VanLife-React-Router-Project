@@ -1,0 +1,60 @@
+.van_detail_container{
+    width: 70%;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.back_to_btn{
+    align-self: flex-start;
+    color: #161616;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.back_to_btn:hover .btn_text{
+    color: blue;
+    border-bottom: 2px solid #e6693c;
+}
+.van_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.van_type{
+    background: #161616;
+    padding: 0.4em 1.2em;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: fit-content;
+}
+.name{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.van_price{
+    font-size: 1.8rem;
+}
+.van_price>span{
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+}
+
+.link_button{
+    background: #e6693c;
+    padding: 0.7em 2em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+}

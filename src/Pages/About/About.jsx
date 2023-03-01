@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import bgImg from "../../Assets/about.jpg"
 import classes from './About.module.css'
